@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YXN</title>
+    <link rel="stylesheet" href="gaya.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+  <body>
+<section class="subs-header">
+  <nav>
+    <a href=""><img src="img/logoku.png"></a>
+    <div class="nav-links" id="navLinks">
+
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+
+      <ul>
+        <li><a href="awal.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="kontaks.html">CONTACT</a></li>
+        <li><a href="login.html">EXIT</a></li>
+      </ul>
+    </div>
+
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+
+  </nav>
+<h1>G a l l e r y</h1>
+</section>
+
+<!-- GALLERY -->
+<div class="judul">
+    <h1>PRODUCT FROM GALLERY</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <h1>1. TRINITY DESIGN</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing  cillum dolore eu fugiat nulla pariatur.Excepteur exparagu cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id laborum.</p>
+      <h2>Rp. 150.000,-</h2>
+      <button type="button">SEE DETAIL</button>
+    </div>
+    <div class="col-2">
+      <div class="fitur-img">
+        <img id="imageBox" src="img/3nit3.png">
+      </div>
+      <div class="sir">
+        <div class="si">
+          <img src="img/3nit3.png" onclick="myFunction(this)">
+        </div>
+        <div class="si">
+          <img src="img/3nit2.png" onclick="myFunction(this)">
+        </div>
+        <div class="si">
+          <img src="img/3nit4.png" onclick="myFunction(this)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- humanity -->
+
+<div class="judul">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <h1>2. HUMANITY DESIGN</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing  cillum dolore eu fugiat nulla pariatur. Excepteur exparagu cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id laborum.</p>
+      <h2>Rp. 150.000,-</h2>
+      <button type="button">SEE DETAIL</button>
+    </div>
+    <div class="col-2">
+      <div class="fitur-img">
+        <img id="imageBog" src="img/hu1.png">
+      </div>
+      <div class="sir">
+        <div class="si">
+          <img src="img/hu1.png" onclick="myFunctionz(this)">
+        </div>
+        <div class="si">
+          <img src="img/hu2.png" onclick="myFunctionz(this)">
+        </div>
+        <div class="si">
+          <img src="img/hu3.png" onclick="myFunctionz(this)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SUNFLOWER -->
+
+
+<div class="judul">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <h1>3. SUNFLOWER DESIGN</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing  cillum dolore eu fugiat nulla pariatur. Excepteur exparagu cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id laborum.</p>
+      <h2>Rp. 150.000,-</h2>
+      <button type="button">SEE DETAIL</button>
+    </div>
+    <div class="col-2">
+      <div class="fitur-img">
+        <img id="imageBoks" src="img/lms1.png">
+      </div>
+      <div class="sir">
+        <div class="si">
+          <img src="img/lms1.png" onclick="myFunctions(this)">
+        </div>
+        <div class="si">
+          <img src="img/lms2.png" onclick="myFunctions(this)">
+        </div>
+        <div class="si">
+          <img src="img/lms3.png" onclick="myFunctions(this)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<section class="footer">
+  <h4>About us</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi .</p>
+
+  <div class="icon">
+    <a href="https://www.facebook.com/yocxanhaliwela.yocxanhaliwela"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/yoxcan/"><i class="fab fa-instagram"></i></a>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-telegram"></i>
+  </div>
+  <p>Made with <i class="fas fa-heart"></i> by Yocxan Maximilian</p>
+</section>
+
+
+
+
+<!-- java toggle -->
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+<!-- img style -->
+<script>
+  function myFunction(smallImg)
+  {
+    var fullImg = document.getElementById("imageBox");
+    fullImg.src = smallImg.src;
+  }
+</script>
+
+<script>
+  function myFunctions(smallImg)
+  {
+    var fullImg = document.getElementById("imageBoks");
+    fullImg.src = smallImg.src;
+  }
+</script>
+
+<script>
+  function myFunctionz(smallImg)
+  {
+    var fullImg = document.getElementById("imageBog");
+    fullImg.src = smallImg.src;
+  }
+</script>
+
+
+  </body>
+</html>
